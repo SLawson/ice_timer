@@ -1,0 +1,75 @@
+C51 COMPILER V9.51   MAIN                                                                  03/22/2015 20:01:14 PAGE 1   
+
+
+C51 COMPILER V9.51, COMPILATION OF MODULE MAIN
+OBJECT MODULE PLACED IN .\DP8051\DP8051_Keil_951\Debug\main.obj
+COMPILER INVOKED BY: C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\import\keil\pk51\9.51\C51\BIN\c51.exe 
+                    -.\main.c NOIV LARGE MODDP2 OMF2 VB(1) NOIP INCDIR(.,.\Generated_Source\PSoC3) FF(3) DB DF(DEBUG) WL(2) PR(.\DP8051\DP805
+                    -1_Keil_951\Debug/main.lst) CD OT(2,SIZE) OJ(.\DP8051\DP8051_Keil_951\Debug\main.obj)
+
+line level    source
+
+   1          /* ========================================
+   2           *
+   3           * File:    main.c
+   4           * Project: Ice Timer
+   5           * Author:  Scott Lawson
+   6           * Version: 2015.3.22
+   7           *
+   8           * ========================================
+   9          */
+  10          #include <project.h>
+  11          
+  12          int main()
+  13          {
+  14   1          LCD_Start();
+  15   1      
+  16   1          LCD_PrintString("Ice Timer");
+  17   1      
+  18   1          /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */
+  19   1          for(;;)
+  20   1          {
+  21   2          }
+  22   1      }
+  23          
+C51 COMPILER V9.51   MAIN                                                                  03/22/2015 20:01:14 PAGE 2   
+
+ASSEMBLY LISTING OF GENERATED OBJECT CODE
+
+
+             ; FUNCTION main (BEGIN)
+                                           ; SOURCE LINE # 12
+                                           ; SOURCE LINE # 13
+                                           ; SOURCE LINE # 14
+0000 120000      E     LCALL   LCD_Start
+                                           ; SOURCE LINE # 16
+0003 7BFF              MOV     R3,#0FFH
+0005 7A00        R     MOV     R2,#HIGH ?SC_0
+0007 7900        R     MOV     R1,#LOW ?SC_0
+0009 120000      E     LCALL   _LCD_PrintString
+                                           ; SOURCE LINE # 19
+000C         ?C0001:
+                                           ; SOURCE LINE # 20
+                                           ; SOURCE LINE # 21
+000C 80FE              SJMP    ?C0001
+000E 22                RET     
+             ; FUNCTION main (END)
+
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =     15    ----
+   CONSTANT SIZE    =     10    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
