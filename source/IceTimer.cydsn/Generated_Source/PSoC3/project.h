@@ -20,6 +20,13 @@
 #include <cyfitter.h>
 #include <cydisabledsheets.h>
 #include <LCD.h>
+#include <startTimer_ISR.h>
+#include <stopTimer_ISR.h>
+#include <stopTimer_PIN.h>
+#include <stopTimer_PIN_aliases.h>
+#include <startTimer_PIN.h>
+#include <startTimer_PIN_aliases.h>
+#include <dbnc_CLK.h>
 #include <LCD_LCDPort.h>
 #include <LCD_LCDPort_aliases.h>
 #include <CyDmac.h>

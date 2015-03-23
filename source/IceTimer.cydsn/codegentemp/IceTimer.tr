@@ -8,7 +8,10 @@
 		3.2::Clock to Out
 		3.3::Pad to Pad
 	4::Path Details for Clock Frequency Summary
+		4.1::Critical Path Report for CyBUS_CLK
+		4.2::Critical Path Report for dbnc_CLK
 	5::Path Details for Clock Relationship Summary
+		5.1::Critical Path Report for (CyBUS_CLK:R vs. dbnc_CLK:R)
 ===================================================================== 
                     End of Table of Contents
 ##################################################################### 
@@ -16,12 +19,13 @@
 ##################################################################### 
                     1::Clock Frequency Summary
 ===================================================================== 
-Number of clocks: 5
-Clock: CyBUS_CLK     | N/A  | Target: 24.00 MHz  | 
-Clock: CyILO         | N/A  | Target: 0.00 MHz   | 
-Clock: CyIMO         | N/A  | Target: 3.00 MHz   | 
-Clock: CyMASTER_CLK  | N/A  | Target: 24.00 MHz  | 
-Clock: CyPLL_OUT     | N/A  | Target: 24.00 MHz  | 
+Number of clocks: 6
+Clock: CyBUS_CLK     | Frequency: 93.10 MHz  | Target: 24.00 MHz  | 
+Clock: CyILO         | N/A                   | Target: 0.00 MHz   | 
+Clock: CyIMO         | N/A                   | Target: 3.00 MHz   | 
+Clock: CyMASTER_CLK  | N/A                   | Target: 24.00 MHz  | 
+Clock: CyPLL_OUT     | N/A                   | Target: 24.00 MHz  | 
+Clock: dbnc_CLK      | Frequency: 93.10 MHz  | Target: 0.00 MHz   | 
 
  =====================================================================
                     End of Clock Frequency Summary
@@ -33,6 +37,8 @@ Clock: CyPLL_OUT     | N/A  | Target: 24.00 MHz  |
  =====================================================================
 
 Launch Clock  Capture Clock  Constraint(R-R)  Slack(R-R)  Constraint(R-F)  Slack(R-F)  Constraint(F-F)  Slack(F-F)  Constraint(F-R)  Slack(F-R)  
+------------  -------------  ---------------  ----------  ---------------  ----------  ---------------  ----------  ---------------  ----------  
+CyBUS_CLK     dbnc_CLK       41666.7          30925       N/A              N/A         N/A              N/A         N/A              N/A         
 
  =====================================================================
                     End of Clock Relationship Summary
@@ -70,6 +76,96 @@ Port Name (Source)  Port Name (Destination)  Delay
 ##################################################################### 
 ##################################################################### 
                     4::Path Details for Clock Frequency Summary
+===================================================================== 
+4.1::Critical Path Report for CyBUS_CLK
+***************************************
+Clock: CyBUS_CLK
+Frequency: 93.10 MHz | Target: 24.00 MHz
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : stopTimer_PIN(0)/fb
+Path End       : Net_104/main_0
+Capture Clock  : Net_104/clock_0
+Path slack     : 30925p
+
+Capture Clock Arrival Time                                 0
++ Clock path delay                                         0
++ Cycle adjust (CyBUS_CLK:R#480000 vs. dbnc_CLK:R#2)   41667
+- Setup time                                           -3510
+----------------------------------------------------   ----- 
+End-of-path required time (ps)                         38157
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       7231
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           7231
+ 
+Launch Clock Path
+pin name                                                    model name      delay     AT  edge  Fanout
+----------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
+stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+
+Data path
+pin name             model name   delay     AT  slack  edge  Fanout
+-------------------  -----------  -----  -----  -----  ----  ------
+stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
+Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+
+Capture Clock Path
+pin name                                                   model name      delay     AT  edge  Fanout
+---------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
+Net_104/clock_0                                            macrocell2          0      0  RISE       1
+
+
+===================================================================== 
+4.2::Critical Path Report for dbnc_CLK
+**************************************
+Clock: dbnc_CLK
+Frequency: 93.10 MHz | Target: 0.00 MHz
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : stopTimer_PIN(0)/fb
+Path End       : Net_104/main_0
+Capture Clock  : Net_104/clock_0
+Path slack     : 30925p
+
+Capture Clock Arrival Time                                 0
++ Clock path delay                                         0
++ Cycle adjust (CyBUS_CLK:R#480000 vs. dbnc_CLK:R#2)   41667
+- Setup time                                           -3510
+----------------------------------------------------   ----- 
+End-of-path required time (ps)                         38157
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       7231
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           7231
+ 
+Launch Clock Path
+pin name                                                    model name      delay     AT  edge  Fanout
+----------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
+stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+
+Data path
+pin name             model name   delay     AT  slack  edge  Fanout
+-------------------  -----------  -----  -----  -----  ----  ------
+stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
+Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+
+Capture Clock Path
+pin name                                                   model name      delay     AT  edge  Fanout
+---------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
+Net_104/clock_0                                            macrocell2          0      0  RISE       1
+
+
 
 ===================================================================== 
                     End of Path Details for Clock Frequency Summary
@@ -80,6 +176,48 @@ Port Name (Source)  Port Name (Destination)  Delay
                     5::Path Details for Clock Relationship Summary
 ===================================================================== 
 
+5.1::Critical Path Report for (CyBUS_CLK:R vs. dbnc_CLK:R)
+**********************************************************
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : stopTimer_PIN(0)/fb
+Path End       : Net_104/main_0
+Capture Clock  : Net_104/clock_0
+Path slack     : 30925p
+
+Capture Clock Arrival Time                                 0
++ Clock path delay                                         0
++ Cycle adjust (CyBUS_CLK:R#480000 vs. dbnc_CLK:R#2)   41667
+- Setup time                                           -3510
+----------------------------------------------------   ----- 
+End-of-path required time (ps)                         38157
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       7231
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           7231
+ 
+Launch Clock Path
+pin name                                                    model name      delay     AT  edge  Fanout
+----------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
+stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+
+Data path
+pin name             model name   delay     AT  slack  edge  Fanout
+-------------------  -----------  -----  -----  -----  ----  ------
+stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
+Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+
+Capture Clock Path
+pin name                                                   model name      delay     AT  edge  Fanout
+---------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
+Net_104/clock_0                                            macrocell2          0      0  RISE       1
+
+
 
 ===================================================================== 
                     End of Path Details for Clock Relationship Summary
@@ -88,6 +226,86 @@ Port Name (Source)  Port Name (Destination)  Delay
 ##################################################################### 
                     Detailed Report for all timing paths 
 ===================================================================== 
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : stopTimer_PIN(0)/fb
+Path End       : Net_104/main_0
+Capture Clock  : Net_104/clock_0
+Path slack     : 30925p
+
+Capture Clock Arrival Time                                 0
++ Clock path delay                                         0
++ Cycle adjust (CyBUS_CLK:R#480000 vs. dbnc_CLK:R#2)   41667
+- Setup time                                           -3510
+----------------------------------------------------   ----- 
+End-of-path required time (ps)                         38157
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       7231
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           7231
+ 
+Launch Clock Path
+pin name                                                    model name      delay     AT  edge  Fanout
+----------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
+stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+
+Data path
+pin name             model name   delay     AT  slack  edge  Fanout
+-------------------  -----------  -----  -----  -----  ----  ------
+stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
+Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+
+Capture Clock Path
+pin name                                                   model name      delay     AT  edge  Fanout
+---------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
+Net_104/clock_0                                            macrocell2          0      0  RISE       1
+
+
+
+++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+
+Path Begin     : startTimer_PIN(0)/fb
+Path End       : Net_103/main_0
+Capture Clock  : Net_103/clock_0
+Path slack     : 31033p
+
+Capture Clock Arrival Time                                 0
++ Clock path delay                                         0
++ Cycle adjust (CyBUS_CLK:R#480000 vs. dbnc_CLK:R#2)   41667
+- Setup time                                           -3510
+----------------------------------------------------   ----- 
+End-of-path required time (ps)                         38157
+
+Launch Clock Arrival Time                      0
++ Clock path delay                         0
++ Data path delay                       7123
+-------------------------------------   ---- 
+End-of-path arrival time (ps)           7123
+ 
+Launch Clock Path
+pin name                                                    model name      delay     AT  edge  Fanout
+----------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
+startTimer_PIN(0)/in_clock                                  iocell8             0      0  RISE       1
+
+Data path
+pin name              model name   delay     AT  slack  edge  Fanout
+--------------------  -----------  -----  -----  -----  ----  ------
+startTimer_PIN(0)/fb  iocell8       1101   1101  31033  RISE       1
+Net_103/main_0        macrocell1    6022   7123  31033  RISE       1
+
+Capture Clock Path
+pin name                                                   model name      delay     AT  edge  Fanout
+---------------------------------------------------------  --------------  -----  -----  ----  ------
+ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
+Net_103/clock_0                                            macrocell1          0      0  RISE       1
+
+
 ===================================================================== 
                     End of Detailed Report for all timing paths 
 ##################################################################### 

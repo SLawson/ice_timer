@@ -12,10 +12,12 @@
 int main()
 {
     LCD_Start();
-
     LCD_PrintString("Ice Timer");
 
-    /* CyGlobalIntEnable; */ /* Uncomment this line to enable global interrupts. */
+    startTimer_ISR_Start();
+    stopTimer_ISR_Start();
+    CyGlobalIntEnable;
+
     for(;;)
     {
     }

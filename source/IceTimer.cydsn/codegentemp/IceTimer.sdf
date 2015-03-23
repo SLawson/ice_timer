@@ -1,6 +1,6 @@
 (DELAYFILE
  (SDFVERSION "IEEE 1497 4.0")
- (DATE "2015-03-23T02:59:50Z")
+ (DATE "2015-03-23T05:32:17Z")
  (DESIGN "IceTimer")
  (VENDOR "Cypress Semiconductor")
  (PROGRAM "PSoC Creator")
@@ -12,6 +12,16 @@
   (INSTANCE *)
   (DELAY
    (ABSOLUTE
+    (INTERCONNECT ClockBlock.clk_bus_glb startTimer_PIN\(0\).in_clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.clk_bus_glb stopTimer_PIN\(0\).in_clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.clk_bus_glb startTimer_ISR.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.clk_bus_glb stopTimer_ISR.clock (0.000:0.000:0.000))
+    (INTERCONNECT Net_103.q startTimer_ISR.interrupt (7.522:7.522:7.522))
+    (INTERCONNECT Net_104.q stopTimer_ISR.interrupt (7.170:7.170:7.170))
+    (INTERCONNECT startTimer_PIN\(0\).fb Net_103.main_0 (6.018:6.018:6.018))
+    (INTERCONNECT stopTimer_PIN\(0\).fb Net_104.main_0 (5.868:5.868:5.868))
+    (INTERCONNECT ClockBlock.dclk_glb_0 Net_103.clock_0 (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.dclk_glb_0 Net_104.clock_0 (0.000:0.000:0.000))
     (INTERCONNECT \\LCD\:LCDPort\(0\)_PAD\\ \\LCD\:LCDPort\(0\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT \\LCD\:LCDPort\(1\)_PAD\\ \\LCD\:LCDPort\(1\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT \\LCD\:LCDPort\(2\)_PAD\\ \\LCD\:LCDPort\(2\)\\.pad_in (0.000:0.000:0.000))
@@ -19,6 +29,8 @@
     (INTERCONNECT \\LCD\:LCDPort\(4\)_PAD\\ \\LCD\:LCDPort\(4\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT \\LCD\:LCDPort\(5\)_PAD\\ \\LCD\:LCDPort\(5\)\\.pad_in (0.000:0.000:0.000))
     (INTERCONNECT \\LCD\:LCDPort\(6\)_PAD\\ \\LCD\:LCDPort\(6\)\\.pad_in (0.000:0.000:0.000))
+    (INTERCONNECT startTimer_PIN\(0\)_PAD startTimer_PIN\(0\).pad_in (0.000:0.000:0.000))
+    (INTERCONNECT stopTimer_PIN\(0\)_PAD stopTimer_PIN\(0\).pad_in (0.000:0.000:0.000))
    )
   )
  )

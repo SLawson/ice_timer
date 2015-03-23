@@ -16,6 +16,18 @@
   <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\LCD.c" value="DP8051_C_FILE;LCD" />
   <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\LCD.h" value="NONE;LCD" />
   <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\LCD_PM.c" value="DP8051_C_FILE;LCD" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\startTimer_ISR.c" value="DP8051_C_FILE;startTimer_ISR" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\startTimer_ISR.h" value="NONE;startTimer_ISR" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\stopTimer_ISR.c" value="DP8051_C_FILE;stopTimer_ISR" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\stopTimer_ISR.h" value="NONE;stopTimer_ISR" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\stopTimer_PIN.c" value="DP8051_C_FILE;stopTimer_PIN" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\stopTimer_PIN.h" value="NONE;stopTimer_PIN" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\stopTimer_PIN_aliases.h" value="NONE;stopTimer_PIN" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\startTimer_PIN.c" value="DP8051_C_FILE;startTimer_PIN" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\startTimer_PIN.h" value="NONE;startTimer_PIN" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\startTimer_PIN_aliases.h" value="NONE;startTimer_PIN" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\dbnc_CLK.c" value="DP8051_C_FILE;dbnc_CLK" />
+  <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\dbnc_CLK.h" value="NONE;dbnc_CLK" />
   <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\LCD_LCDPort.c" value="DP8051_C_FILE;LCD_LCDPort" />
   <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\LCD_LCDPort.h" value="NONE;LCD_LCDPort" />
   <file name="C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\codegentemp\LCD_LCDPort_aliases.h" value="NONE;LCD_LCDPort" />
