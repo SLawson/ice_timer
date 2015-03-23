@@ -25,7 +25,9 @@
 *  Place your includes, defines and code here 
 ********************************************************************************/
 /* `#START startTimer_ISR_intc` */
-
+    
+#include <project.h>
+    
 /* `#END` */
 
 
@@ -131,6 +133,10 @@ CY_ISR(startTimer_ISR_Interrupt)
     /*  Place your Interrupt code here. */
     /* `#START startTimer_ISR_Interrupt` */
 
+    LCD_ClearDisplay();
+    LCD_Position(0,0);
+    LCD_PrintString("Start Timer");
+    
     /* `#END` */
 
     /* PSoC3 ES1, ES2 RTC ISR PATCH  */ 

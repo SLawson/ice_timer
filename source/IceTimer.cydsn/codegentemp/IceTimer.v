@@ -1,6 +1,6 @@
 // ======================================================================
 // IceTimer.v generated from TopDesign.cysch
-// 03/22/2015 at 22:32
+// 03/22/2015 at 22:57
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -146,6 +146,19 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\Debouncer_v1_0\Debouncer_v1_0.v"
 `endif
 
+// Component: not_v1_0
+`ifdef CY_BLK_DIR
+`undef CY_BLK_DIR
+`endif
+
+`ifdef WARP
+`define CY_BLK_DIR "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
+`include "$CYPRESS_DIR\..\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
+`else
+`define CY_BLK_DIR "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0"
+`include "C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\not_v1_0\not_v1_0.v"
+`endif
+
 // top
 module top ;
 
@@ -157,9 +170,10 @@ module top ;
           wire  Net_114;
           wire  Net_113;
           wire  Net_104;
+          wire  Net_157;
+          wire  Net_154;
           wire  Net_129;
           wire  Net_105;
-          wire  Net_103;
           wire  Net_122;
 
     CharLCD_v2_10_0 LCD ();
@@ -168,13 +182,13 @@ module top ;
 	cy_isr_v1_0
 		#(.int_type(2'b00))
 		startTimer_ISR
-		 (.int_signal(Net_103));
+		 (.int_signal(Net_157));
 
 
     Debouncer_v1_0 startTimer_DBNC (
         .d(Net_105),
         .clock(Net_129),
-        .q(Net_103),
+        .q(Net_154),
         .neg(Net_113),
         .either(Net_114),
         .pos(Net_115));
@@ -190,10 +204,10 @@ module top ;
 		 (.int_signal(Net_104));
 
 
-	wire [0:0] tmpOE__stopTimer_PIN_net;
-	wire [0:0] tmpIO_0__stopTimer_PIN_net;
-	wire [0:0] tmpINTERRUPT_0__stopTimer_PIN_net;
-	electrical [0:0] tmpSIOVREF__stopTimer_PIN_net;
+	wire [0:0] tmpOE__downPosition_PIN_net;
+	wire [0:0] tmpIO_0__downPosition_PIN_net;
+	wire [0:0] tmpINTERRUPT_0__downPosition_PIN_net;
+	electrical [0:0] tmpSIOVREF__downPosition_PIN_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("ff71b630-d4fb-4bb5-bd46-fea7933ec6ec"),
@@ -246,13 +260,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		stopTimer_PIN
-		 (.oe(tmpOE__stopTimer_PIN_net),
+		downPosition_PIN
+		 (.oe(tmpOE__downPosition_PIN_net),
 		  .y({1'b0}),
 		  .fb({Net_122}),
-		  .io({tmpIO_0__stopTimer_PIN_net[0:0]}),
-		  .siovref(tmpSIOVREF__stopTimer_PIN_net),
-		  .interrupt({tmpINTERRUPT_0__stopTimer_PIN_net[0:0]}),
+		  .io({tmpIO_0__downPosition_PIN_net[0:0]}),
+		  .siovref(tmpSIOVREF__downPosition_PIN_net),
+		  .interrupt({tmpINTERRUPT_0__downPosition_PIN_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -260,12 +274,12 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__stopTimer_PIN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__downPosition_PIN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [0:0] tmpOE__startTimer_PIN_net;
-	wire [0:0] tmpIO_0__startTimer_PIN_net;
-	wire [0:0] tmpINTERRUPT_0__startTimer_PIN_net;
-	electrical [0:0] tmpSIOVREF__startTimer_PIN_net;
+	wire [0:0] tmpOE__upPosition_PIN_net;
+	wire [0:0] tmpIO_0__upPosition_PIN_net;
+	wire [0:0] tmpINTERRUPT_0__upPosition_PIN_net;
+	electrical [0:0] tmpSIOVREF__upPosition_PIN_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba"),
@@ -318,13 +332,13 @@ module top ;
 		  .ovt_needed(1'b0),
 		  .ovt_slew_control(2'b00),
 		  .input_buffer_sel(2'b00))
-		startTimer_PIN
-		 (.oe(tmpOE__startTimer_PIN_net),
+		upPosition_PIN
+		 (.oe(tmpOE__upPosition_PIN_net),
 		  .y({1'b0}),
 		  .fb({Net_105}),
-		  .io({tmpIO_0__startTimer_PIN_net[0:0]}),
-		  .siovref(tmpSIOVREF__startTimer_PIN_net),
-		  .interrupt({tmpINTERRUPT_0__startTimer_PIN_net[0:0]}),
+		  .io({tmpIO_0__upPosition_PIN_net[0:0]}),
+		  .siovref(tmpSIOVREF__upPosition_PIN_net),
+		  .interrupt({tmpINTERRUPT_0__upPosition_PIN_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -332,7 +346,7 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__startTimer_PIN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+	assign tmpOE__upPosition_PIN_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
     Debouncer_v1_0 stopTimer_DBNC (
         .d(Net_122),
@@ -356,6 +370,16 @@ module top ;
 		  .is_digital(1))
 		dbnc_CLK
 		 (.clock_out(Net_129));
+
+
+
+    assign Net_157 = ~Net_154;
+
+
+	cy_isr_v1_0
+		#(.int_type(2'b00))
+		readyTimer_ISR
+		 (.int_signal(Net_154));
 
 
 

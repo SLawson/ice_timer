@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: stopTimer_PIN.c  
+* File Name: downPosition_PIN.c  
 * Version 2.10
 *
 * Description:
@@ -15,11 +15,11 @@
 *******************************************************************************/
 
 #include "cytypes.h"
-#include "stopTimer_PIN.h"
+#include "downPosition_PIN.h"
 
 
 /*******************************************************************************
-* Function Name: stopTimer_PIN_Write
+* Function Name: downPosition_PIN_Write
 ********************************************************************************
 *
 * Summary:
@@ -32,15 +32,15 @@
 *  None 
 *  
 *******************************************************************************/
-void stopTimer_PIN_Write(uint8 value) 
+void downPosition_PIN_Write(uint8 value) 
 {
-    uint8 staticBits = (stopTimer_PIN_DR & (uint8)(~stopTimer_PIN_MASK));
-    stopTimer_PIN_DR = staticBits | ((uint8)(value << stopTimer_PIN_SHIFT) & stopTimer_PIN_MASK);
+    uint8 staticBits = (downPosition_PIN_DR & (uint8)(~downPosition_PIN_MASK));
+    downPosition_PIN_DR = staticBits | ((uint8)(value << downPosition_PIN_SHIFT) & downPosition_PIN_MASK);
 }
 
 
 /*******************************************************************************
-* Function Name: stopTimer_PIN_SetDriveMode
+* Function Name: downPosition_PIN_SetDriveMode
 ********************************************************************************
 *
 * Summary:
@@ -49,27 +49,27 @@ void stopTimer_PIN_Write(uint8 value)
 * Parameters:  
 *  mode:  Change the pins to one of the following drive modes.
 *
-*  stopTimer_PIN_DM_STRONG     Strong Drive 
-*  stopTimer_PIN_DM_OD_HI      Open Drain, Drives High 
-*  stopTimer_PIN_DM_OD_LO      Open Drain, Drives Low 
-*  stopTimer_PIN_DM_RES_UP     Resistive Pull Up 
-*  stopTimer_PIN_DM_RES_DWN    Resistive Pull Down 
-*  stopTimer_PIN_DM_RES_UPDWN  Resistive Pull Up/Down 
-*  stopTimer_PIN_DM_DIG_HIZ    High Impedance Digital 
-*  stopTimer_PIN_DM_ALG_HIZ    High Impedance Analog 
+*  downPosition_PIN_DM_STRONG     Strong Drive 
+*  downPosition_PIN_DM_OD_HI      Open Drain, Drives High 
+*  downPosition_PIN_DM_OD_LO      Open Drain, Drives Low 
+*  downPosition_PIN_DM_RES_UP     Resistive Pull Up 
+*  downPosition_PIN_DM_RES_DWN    Resistive Pull Down 
+*  downPosition_PIN_DM_RES_UPDWN  Resistive Pull Up/Down 
+*  downPosition_PIN_DM_DIG_HIZ    High Impedance Digital 
+*  downPosition_PIN_DM_ALG_HIZ    High Impedance Analog 
 *
 * Return: 
 *  None
 *
 *******************************************************************************/
-void stopTimer_PIN_SetDriveMode(uint8 mode) 
+void downPosition_PIN_SetDriveMode(uint8 mode) 
 {
-	CyPins_SetPinDriveMode(stopTimer_PIN_0, mode);
+	CyPins_SetPinDriveMode(downPosition_PIN_0, mode);
 }
 
 
 /*******************************************************************************
-* Function Name: stopTimer_PIN_Read
+* Function Name: downPosition_PIN_Read
 ********************************************************************************
 *
 * Summary:
@@ -83,17 +83,17 @@ void stopTimer_PIN_SetDriveMode(uint8 mode)
 *  Returns the current value of the Digital Port as a right justified number
 *  
 * Note:
-*  Macro stopTimer_PIN_ReadPS calls this function. 
+*  Macro downPosition_PIN_ReadPS calls this function. 
 *  
 *******************************************************************************/
-uint8 stopTimer_PIN_Read(void) 
+uint8 downPosition_PIN_Read(void) 
 {
-    return (stopTimer_PIN_PS & stopTimer_PIN_MASK) >> stopTimer_PIN_SHIFT;
+    return (downPosition_PIN_PS & downPosition_PIN_MASK) >> downPosition_PIN_SHIFT;
 }
 
 
 /*******************************************************************************
-* Function Name: stopTimer_PIN_ReadDataReg
+* Function Name: downPosition_PIN_ReadDataReg
 ********************************************************************************
 *
 * Summary:
@@ -106,17 +106,17 @@ uint8 stopTimer_PIN_Read(void)
 *  Returns the current value assigned to the Digital Port's data output register
 *  
 *******************************************************************************/
-uint8 stopTimer_PIN_ReadDataReg(void) 
+uint8 downPosition_PIN_ReadDataReg(void) 
 {
-    return (stopTimer_PIN_DR & stopTimer_PIN_MASK) >> stopTimer_PIN_SHIFT;
+    return (downPosition_PIN_DR & downPosition_PIN_MASK) >> downPosition_PIN_SHIFT;
 }
 
 
 /* If Interrupts Are Enabled for this Pins component */ 
-#if defined(stopTimer_PIN_INTSTAT) 
+#if defined(downPosition_PIN_INTSTAT) 
 
     /*******************************************************************************
-    * Function Name: stopTimer_PIN_ClearInterrupt
+    * Function Name: downPosition_PIN_ClearInterrupt
     ********************************************************************************
     *
     * Summary:
@@ -130,9 +130,9 @@ uint8 stopTimer_PIN_ReadDataReg(void)
     *  Returns the value of the interrupt status register
     *  
     *******************************************************************************/
-    uint8 stopTimer_PIN_ClearInterrupt(void) 
+    uint8 downPosition_PIN_ClearInterrupt(void) 
     {
-        return (stopTimer_PIN_INTSTAT & stopTimer_PIN_MASK) >> stopTimer_PIN_SHIFT;
+        return (downPosition_PIN_INTSTAT & downPosition_PIN_MASK) >> downPosition_PIN_SHIFT;
     }
 
 #endif /* If Interrupts Are Enabled for this Pins component */ 

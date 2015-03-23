@@ -2,7 +2,7 @@
 --	Conversion of IceTimer.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Sun Mar 22 22:32:10 2015
+--	Sun Mar 22 22:57:35 2015
 --
 
 USE cypress.cypress.all;
@@ -37,25 +37,26 @@ SIGNAL \LCD:tmpIO_6__LCDPort_net_0\ : bit;
 TERMINAL \LCD:tmpSIOVREF__LCDPort_net_0\ : bit;
 SIGNAL one : bit;
 SIGNAL \LCD:tmpINTERRUPT_0__LCDPort_net_0\ : bit;
-SIGNAL Net_103 : bit;
+SIGNAL Net_157 : bit;
 SIGNAL Net_129 : bit;
 SIGNAL \startTimer_DBNC:op_clk\ : bit;
 SIGNAL \startTimer_DBNC:DEBOUNCER[0]:d_sync_0\ : bit;
 SIGNAL Net_105 : bit;
 SIGNAL \startTimer_DBNC:DEBOUNCER[0]:d_sync_1\ : bit;
+SIGNAL Net_154 : bit;
 SIGNAL Net_115 : bit;
 SIGNAL Net_113 : bit;
 SIGNAL Net_114 : bit;
 SIGNAL Net_104 : bit;
-SIGNAL tmpOE__stopTimer_PIN_net_0 : bit;
+SIGNAL tmpOE__downPosition_PIN_net_0 : bit;
 SIGNAL Net_122 : bit;
-SIGNAL tmpIO_0__stopTimer_PIN_net_0 : bit;
-TERMINAL tmpSIOVREF__stopTimer_PIN_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__stopTimer_PIN_net_0 : bit;
-SIGNAL tmpOE__startTimer_PIN_net_0 : bit;
-SIGNAL tmpIO_0__startTimer_PIN_net_0 : bit;
-TERMINAL tmpSIOVREF__startTimer_PIN_net_0 : bit;
-SIGNAL tmpINTERRUPT_0__startTimer_PIN_net_0 : bit;
+SIGNAL tmpIO_0__downPosition_PIN_net_0 : bit;
+TERMINAL tmpSIOVREF__downPosition_PIN_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__downPosition_PIN_net_0 : bit;
+SIGNAL tmpOE__upPosition_PIN_net_0 : bit;
+SIGNAL tmpIO_0__upPosition_PIN_net_0 : bit;
+TERMINAL tmpSIOVREF__upPosition_PIN_net_0 : bit;
+SIGNAL tmpINTERRUPT_0__upPosition_PIN_net_0 : bit;
 SIGNAL \stopTimer_DBNC:op_clk\ : bit;
 SIGNAL \stopTimer_DBNC:DEBOUNCER[0]:d_sync_0\ : bit;
 SIGNAL \stopTimer_DBNC:DEBOUNCER[0]:d_sync_1\ : bit;
@@ -78,9 +79,11 @@ zero <=  ('0') ;
 
 one <=  ('1') ;
 
-Net_115D <= ((not \startTimer_DBNC:DEBOUNCER[0]:d_sync_1\ and Net_103));
+Net_115D <= ((not \startTimer_DBNC:DEBOUNCER[0]:d_sync_1\ and Net_154));
 
 Net_132D <= ((not \stopTimer_DBNC:DEBOUNCER[0]:d_sync_1\ and Net_104));
+
+Net_157 <= (not Net_154);
 
 \LCD:LCDPort\:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"eac6719e-57a0-443e-b031-12c3844529de/ed092b9b-d398-4703-be89-cebf998501f6",
@@ -159,7 +162,7 @@ Net_132D <= ((not \stopTimer_DBNC:DEBOUNCER[0]:d_sync_1\ and Net_104));
 		interrupt=>\LCD:tmpINTERRUPT_0__LCDPort_net_0\);
 startTimer_ISR:cy_isr_v1_0
 	GENERIC MAP(int_type=>"00")
-	PORT MAP(int_signal=>Net_103);
+	PORT MAP(int_signal=>Net_157);
 \startTimer_DBNC:ClkSync\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_129,
@@ -168,7 +171,7 @@ startTimer_ISR:cy_isr_v1_0
 stopTimer_ISR:cy_isr_v1_0
 	GENERIC MAP(int_type=>"00")
 	PORT MAP(int_signal=>Net_104);
-stopTimer_PIN:cy_psoc3_pins_v1_10
+downPosition_PIN:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"ff71b630-d4fb-4bb5-bd46-fea7933ec6ec",
 		drive_mode=>"011",
 		ibuf_enabled=>"1",
@@ -227,8 +230,8 @@ stopTimer_PIN:cy_psoc3_pins_v1_10
 		y=>(zero),
 		fb=>Net_122,
 		analog=>(open),
-		io=>(tmpIO_0__stopTimer_PIN_net_0),
-		siovref=>(tmpSIOVREF__stopTimer_PIN_net_0),
+		io=>(tmpIO_0__downPosition_PIN_net_0),
+		siovref=>(tmpSIOVREF__downPosition_PIN_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -236,8 +239,8 @@ stopTimer_PIN:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__stopTimer_PIN_net_0);
-startTimer_PIN:cy_psoc3_pins_v1_10
+		interrupt=>tmpINTERRUPT_0__downPosition_PIN_net_0);
+upPosition_PIN:cy_psoc3_pins_v1_10
 	GENERIC MAP(id=>"8d318d8b-cf7b-4b6b-b02c-ab1c5c49d0ba",
 		drive_mode=>"011",
 		ibuf_enabled=>"1",
@@ -296,8 +299,8 @@ startTimer_PIN:cy_psoc3_pins_v1_10
 		y=>(zero),
 		fb=>Net_105,
 		analog=>(open),
-		io=>(tmpIO_0__startTimer_PIN_net_0),
-		siovref=>(tmpSIOVREF__startTimer_PIN_net_0),
+		io=>(tmpIO_0__upPosition_PIN_net_0),
+		siovref=>(tmpSIOVREF__upPosition_PIN_net_0),
 		annotation=>(open),
 		in_clock=>zero,
 		in_clock_en=>one,
@@ -305,7 +308,7 @@ startTimer_PIN:cy_psoc3_pins_v1_10
 		out_clock=>zero,
 		out_clock_en=>one,
 		out_reset=>zero,
-		interrupt=>tmpINTERRUPT_0__startTimer_PIN_net_0);
+		interrupt=>tmpINTERRUPT_0__upPosition_PIN_net_0);
 \stopTimer_DBNC:ClkSync\:cy_psoc3_udb_clock_enable_v1_0
 	GENERIC MAP(sync_mode=>'1')
 	PORT MAP(clock_in=>Net_129,
@@ -321,12 +324,15 @@ dbnc_CLK:cy_clock_v1_0
 		is_digital=>'1')
 	PORT MAP(clock_out=>Net_129,
 		dig_domain_out=>open);
+readyTimer_ISR:cy_isr_v1_0
+	GENERIC MAP(int_type=>"00")
+	PORT MAP(int_signal=>Net_154);
 \startTimer_DBNC:DEBOUNCER[0]:d_sync_0\:cy_dff
 	PORT MAP(d=>Net_105,
 		clk=>\startTimer_DBNC:op_clk\,
-		q=>Net_103);
+		q=>Net_154);
 \startTimer_DBNC:DEBOUNCER[0]:d_sync_1\:cy_dff
-	PORT MAP(d=>Net_103,
+	PORT MAP(d=>Net_154,
 		clk=>\startTimer_DBNC:op_clk\,
 		q=>\startTimer_DBNC:DEBOUNCER[0]:d_sync_1\);
 Net_115:cy_dff

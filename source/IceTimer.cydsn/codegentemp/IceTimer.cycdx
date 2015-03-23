@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <blockRegMap version="1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://cypress.com/xsd/cyblockregmap cyblockregmap.xsd" xmlns="http://cypress.com/xsd/cyblockregmap">
-  <block name="startTimer_PIN" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="stopTimer_PIN" BASE="0x0" SIZE="0x0" desc="" visible="true" />
-  <block name="dbnc_CLK" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="stopTimer_DBNC" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="upPosition_PIN" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="dbnc_CLK" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="readyTimer_ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="not_1" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="startTimer_ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="LCD" BASE="0x0" SIZE="0x0" desc="" visible="true">
     <block name="LCDPort" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   </block>
-  <block name="stopTimer_ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
   <block name="startTimer_DBNC" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="downPosition_PIN" BASE="0x0" SIZE="0x0" desc="" visible="true" />
+  <block name="stopTimer_ISR" BASE="0x0" SIZE="0x0" desc="" visible="true" />
 </blockRegMap>

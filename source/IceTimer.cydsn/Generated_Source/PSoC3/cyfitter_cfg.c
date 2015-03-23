@@ -89,13 +89,13 @@ static void CyClockStartupError(uint8 errorCode)
 
 #define cfg_byte_table ((const void CYFAR *)0x080000u)
 /* IOPINS0_0 Address: CYREG_PRT0_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x00080084u)
+#define BS_IOPINS0_0_VAL ((const uint8 CYFAR *)0x000800A4u)
 
 /* IOPINS0_2 Address: CYREG_PRT2_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x0008008Cu)
+#define BS_IOPINS0_2_VAL ((const uint8 CYFAR *)0x000800ACu)
 
 /* IOPINS0_3 Address: CYREG_PRT3_DM0 Size (bytes): 8 */
-#define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x00080094u)
+#define BS_IOPINS0_3_VAL ((const uint8 CYFAR *)0x000800B4u)
 
 
 /*******************************************************************************

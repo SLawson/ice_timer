@@ -1,5 +1,5 @@
 # IceTimer
-# 2015-03-23 05:32:14Z
+# 2015-03-23 05:57:39Z
 
 # IO_0@[IOP=(1)][IoId=(0)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 0
@@ -8,8 +8,9 @@ dont_use_io iocell 1 1
 # IO_3@[IOP=(1)][IoId=(3)] is reserved: SWDDebugEnabled
 dont_use_io iocell 1 3
 set_location "ClockBlock" clockblockcell -1 -1 0
-set_location "Net_103" 3 2 0 1
 set_location "Net_104" 3 2 0 0
+set_location "Net_154" 3 2 0 2
+set_location "Net_157" 3 2 0 1
 set_io "\LCD:LCDPort(0)\" iocell 2 0
 set_io "\LCD:LCDPort(1)\" iocell 2 1
 set_io "\LCD:LCDPort(2)\" iocell 2 2
@@ -17,7 +18,8 @@ set_io "\LCD:LCDPort(3)\" iocell 2 3
 set_io "\LCD:LCDPort(4)\" iocell 2 4
 set_io "\LCD:LCDPort(5)\" iocell 2 5
 set_io "\LCD:LCDPort(6)\" iocell 2 6
-set_location "startTimer_ISR" interrupt -1 -1 0
-set_io "startTimer_PIN(0)" iocell 0 0
-set_location "stopTimer_ISR" interrupt -1 -1 1
-set_io "stopTimer_PIN(0)" iocell 3 0
+set_io "downPosition_PIN(0)" iocell 3 0
+set_location "readyTimer_ISR" interrupt -1 -1 0
+set_location "startTimer_ISR" interrupt -1 -1 1
+set_location "stopTimer_ISR" interrupt -1 -1 2
+set_io "upPosition_PIN(0)" iocell 0 0

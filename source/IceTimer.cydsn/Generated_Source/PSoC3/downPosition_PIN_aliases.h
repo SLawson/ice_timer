@@ -1,5 +1,5 @@
 /*******************************************************************************
-* File Name: startTimer_PIN.h  
+* File Name: downPosition_PIN.h  
 * Version 2.10
 *
 * Description:
@@ -14,8 +14,8 @@
 * the software package with which this file was provided.
 *******************************************************************************/
 
-#if !defined(CY_PINS_startTimer_PIN_ALIASES_H) /* Pins startTimer_PIN_ALIASES_H */
-#define CY_PINS_startTimer_PIN_ALIASES_H
+#if !defined(CY_PINS_downPosition_PIN_ALIASES_H) /* Pins downPosition_PIN_ALIASES_H */
+#define CY_PINS_downPosition_PIN_ALIASES_H
 
 #include "cytypes.h"
 #include "cyfitter.h"
@@ -24,9 +24,9 @@
 /***************************************
 *              Constants        
 ***************************************/
-#define startTimer_PIN_0		(startTimer_PIN__0__PC)
+#define downPosition_PIN_0		(downPosition_PIN__0__PC)
 
-#endif /* End Pins startTimer_PIN_ALIASES_H */
+#endif /* End Pins downPosition_PIN_ALIASES_H */
 
 
 /* [] END OF FILE */

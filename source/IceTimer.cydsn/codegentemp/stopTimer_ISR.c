@@ -26,6 +26,8 @@
 ********************************************************************************/
 /* `#START stopTimer_ISR_intc` */
 
+#include <project.h>    
+    
 /* `#END` */
 
 
@@ -130,6 +132,10 @@ CY_ISR(stopTimer_ISR_Interrupt)
 {
     /*  Place your Interrupt code here. */
     /* `#START stopTimer_ISR_Interrupt` */
+    
+    LCD_ClearDisplay();
+    LCD_Position(0,0);
+    LCD_PrintString("Stop Timer");
 
     /* `#END` */
 

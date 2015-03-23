@@ -84,7 +84,7 @@ Frequency: 93.10 MHz | Target: 24.00 MHz
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : stopTimer_PIN(0)/fb
+Path Begin     : downPosition_PIN(0)/fb
 Path End       : Net_104/main_0
 Capture Clock  : Net_104/clock_0
 Path slack     : 30925p
@@ -106,19 +106,19 @@ Launch Clock Path
 pin name                                                    model name      delay     AT  edge  Fanout
 ----------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
-stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+downPosition_PIN(0)/in_clock                                iocell8             0      0  RISE       1
 
 Data path
-pin name             model name   delay     AT  slack  edge  Fanout
--------------------  -----------  -----  -----  -----  ----  ------
-stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
-Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+pin name                model name   delay     AT  slack  edge  Fanout
+----------------------  -----------  -----  -----  -----  ----  ------
+downPosition_PIN(0)/fb  iocell8       1355   1355  30925  RISE       1
+Net_104/main_0          macrocell1    5876   7231  30925  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
 ---------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
-Net_104/clock_0                                            macrocell2          0      0  RISE       1
+Net_104/clock_0                                            macrocell1          0      0  RISE       1
 
 
 ===================================================================== 
@@ -129,7 +129,7 @@ Frequency: 93.10 MHz | Target: 0.00 MHz
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : stopTimer_PIN(0)/fb
+Path Begin     : downPosition_PIN(0)/fb
 Path End       : Net_104/main_0
 Capture Clock  : Net_104/clock_0
 Path slack     : 30925p
@@ -151,19 +151,19 @@ Launch Clock Path
 pin name                                                    model name      delay     AT  edge  Fanout
 ----------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
-stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+downPosition_PIN(0)/in_clock                                iocell8             0      0  RISE       1
 
 Data path
-pin name             model name   delay     AT  slack  edge  Fanout
--------------------  -----------  -----  -----  -----  ----  ------
-stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
-Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+pin name                model name   delay     AT  slack  edge  Fanout
+----------------------  -----------  -----  -----  -----  ----  ------
+downPosition_PIN(0)/fb  iocell8       1355   1355  30925  RISE       1
+Net_104/main_0          macrocell1    5876   7231  30925  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
 ---------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
-Net_104/clock_0                                            macrocell2          0      0  RISE       1
+Net_104/clock_0                                            macrocell1          0      0  RISE       1
 
 
 
@@ -181,7 +181,7 @@ Net_104/clock_0                                            macrocell2          0
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : stopTimer_PIN(0)/fb
+Path Begin     : downPosition_PIN(0)/fb
 Path End       : Net_104/main_0
 Capture Clock  : Net_104/clock_0
 Path slack     : 30925p
@@ -203,19 +203,19 @@ Launch Clock Path
 pin name                                                    model name      delay     AT  edge  Fanout
 ----------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
-stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+downPosition_PIN(0)/in_clock                                iocell8             0      0  RISE       1
 
 Data path
-pin name             model name   delay     AT  slack  edge  Fanout
--------------------  -----------  -----  -----  -----  ----  ------
-stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
-Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+pin name                model name   delay     AT  slack  edge  Fanout
+----------------------  -----------  -----  -----  -----  ----  ------
+downPosition_PIN(0)/fb  iocell8       1355   1355  30925  RISE       1
+Net_104/main_0          macrocell1    5876   7231  30925  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
 ---------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
-Net_104/clock_0                                            macrocell2          0      0  RISE       1
+Net_104/clock_0                                            macrocell1          0      0  RISE       1
 
 
 
@@ -229,7 +229,7 @@ Net_104/clock_0                                            macrocell2          0
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : stopTimer_PIN(0)/fb
+Path Begin     : downPosition_PIN(0)/fb
 Path End       : Net_104/main_0
 Capture Clock  : Net_104/clock_0
 Path slack     : 30925p
@@ -251,27 +251,27 @@ Launch Clock Path
 pin name                                                    model name      delay     AT  edge  Fanout
 ----------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
-stopTimer_PIN(0)/in_clock                                   iocell9             0      0  RISE       1
+downPosition_PIN(0)/in_clock                                iocell8             0      0  RISE       1
 
 Data path
-pin name             model name   delay     AT  slack  edge  Fanout
--------------------  -----------  -----  -----  -----  ----  ------
-stopTimer_PIN(0)/fb  iocell9       1355   1355  30925  RISE       1
-Net_104/main_0       macrocell2    5876   7231  30925  RISE       1
+pin name                model name   delay     AT  slack  edge  Fanout
+----------------------  -----------  -----  -----  -----  ----  ------
+downPosition_PIN(0)/fb  iocell8       1355   1355  30925  RISE       1
+Net_104/main_0          macrocell1    5876   7231  30925  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
 ---------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
-Net_104/clock_0                                            macrocell2          0      0  RISE       1
+Net_104/clock_0                                            macrocell1          0      0  RISE       1
 
 
 
 ++++ Path 2 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
 
-Path Begin     : startTimer_PIN(0)/fb
-Path End       : Net_103/main_0
-Capture Clock  : Net_103/clock_0
+Path Begin     : upPosition_PIN(0)/fb
+Path End       : Net_154/main_0
+Capture Clock  : Net_154/clock_0
 Path slack     : 31033p
 
 Capture Clock Arrival Time                                 0
@@ -291,19 +291,19 @@ Launch Clock Path
 pin name                                                    model name      delay     AT  edge  Fanout
 ----------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/clk_bus_glb                                      clockblockcell      0      0  RISE       1
-startTimer_PIN(0)/in_clock                                  iocell8             0      0  RISE       1
+upPosition_PIN(0)/in_clock                                  iocell9             0      0  RISE       1
 
 Data path
 pin name              model name   delay     AT  slack  edge  Fanout
 --------------------  -----------  -----  -----  -----  ----  ------
-startTimer_PIN(0)/fb  iocell8       1101   1101  31033  RISE       1
-Net_103/main_0        macrocell1    6022   7123  31033  RISE       1
+upPosition_PIN(0)/fb  iocell9       1101   1101  31033  RISE       1
+Net_154/main_0        macrocell2    6022   7123  31033  RISE       1
 
 Capture Clock Path
 pin name                                                   model name      delay     AT  edge  Fanout
 ---------------------------------------------------------  --------------  -----  -----  ----  ------
 ClockBlock/dclk_glb_0                                      clockblockcell      0      0  RISE       1
-Net_103/clock_0                                            macrocell1          0      0  RISE       1
+Net_154/clock_0                                            macrocell2          0      0  RISE       1
 
 
 ===================================================================== 

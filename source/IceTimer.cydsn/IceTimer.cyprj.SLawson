@@ -12,7 +12,7 @@
 <CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256 type_name="CyDesigner.Common.ProjMgmt.Model.CyConfigDependencies" version="1">
 <dependency_info name="4bd5669a-0e4e-4e1c-9625-e982dd945372@Debug@DP8051" xml_contents_version="2">
 <CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021 type_name="CyDesigner.Common.Base.CyFileDeps" version="1">
-<file name=".\DP8051\DP8051_Keil_951\Debug\startTimer_ISR.obj">
+<file name=".\DP8051\DP8051_Keil_951\Debug\main.obj">
 <dep name=".\Generated_Source\PSoC3\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC3\CyFlash.h" />
 <dep name=".\Generated_Source\PSoC3\CyLib.h" />
@@ -30,14 +30,15 @@
 <dep name=".\Generated_Source\PSoC3\cypins.h" />
 <dep name=".\Generated_Source\PSoC3\cytypes.h" />
 <dep name=".\Generated_Source\PSoC3\dbnc_CLK.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN_aliases.h" />
 <dep name=".\Generated_Source\PSoC3\project.h" />
+<dep name=".\Generated_Source\PSoC3\readyTimer_ISR.h" />
 <dep name=".\Generated_Source\PSoC3\startTimer_ISR.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_PIN.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_PIN_aliases.h" />
 <dep name=".\Generated_Source\PSoC3\stopTimer_ISR.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_PIN.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_PIN_aliases.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_ISR.c" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN_aliases.h" />
+<dep name=".\main.c" />
 </file>
 <file name=".\Generated_Source\PSoC3\CyDmac.h" />
 <file name=".\Generated_Source\PSoC3\CyFlash.h" />
@@ -56,13 +57,72 @@
 <file name=".\Generated_Source\PSoC3\cypins.h" />
 <file name=".\Generated_Source\PSoC3\cytypes.h" />
 <file name=".\Generated_Source\PSoC3\dbnc_CLK.h" />
+<file name=".\Generated_Source\PSoC3\downPosition_PIN.h" />
+<file name=".\Generated_Source\PSoC3\downPosition_PIN_aliases.h" />
 <file name=".\Generated_Source\PSoC3\project.h" />
+<file name=".\Generated_Source\PSoC3\readyTimer_ISR.h" />
 <file name=".\Generated_Source\PSoC3\startTimer_ISR.h" />
-<file name=".\Generated_Source\PSoC3\startTimer_PIN.h" />
-<file name=".\Generated_Source\PSoC3\startTimer_PIN_aliases.h" />
 <file name=".\Generated_Source\PSoC3\stopTimer_ISR.h" />
-<file name=".\Generated_Source\PSoC3\stopTimer_PIN.h" />
-<file name=".\Generated_Source\PSoC3\stopTimer_PIN_aliases.h" />
+<file name=".\Generated_Source\PSoC3\upPosition_PIN.h" />
+<file name=".\Generated_Source\PSoC3\upPosition_PIN_aliases.h" />
+<file name=".\main.c" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\readyTimer_ISR.obj">
+<dep name=".\Generated_Source\PSoC3\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC3\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC3\CyLib.h" />
+<dep name=".\Generated_Source\PSoC3\CySpc.h" />
+<dep name=".\Generated_Source\PSoC3\LCD.h" />
+<dep name=".\Generated_Source\PSoC3\LCD_LCDPort.h" />
+<dep name=".\Generated_Source\PSoC3\LCD_LCDPort_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\PSoC3_8051.h" />
+<dep name=".\Generated_Source\PSoC3\cyPm.h" />
+<dep name=".\Generated_Source\PSoC3\cydevice.h" />
+<dep name=".\Generated_Source\PSoC3\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC3\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC3\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC3\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC3\cypins.h" />
+<dep name=".\Generated_Source\PSoC3\cytypes.h" />
+<dep name=".\Generated_Source\PSoC3\dbnc_CLK.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\project.h" />
+<dep name=".\Generated_Source\PSoC3\readyTimer_ISR.h" />
+<dep name=".\Generated_Source\PSoC3\startTimer_ISR.h" />
+<dep name=".\Generated_Source\PSoC3\stopTimer_ISR.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\readyTimer_ISR.c" />
+</file>
+<file name=".\Generated_Source\PSoC3\readyTimer_ISR.c" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\startTimer_ISR.obj">
+<dep name=".\Generated_Source\PSoC3\CyDmac.h" />
+<dep name=".\Generated_Source\PSoC3\CyFlash.h" />
+<dep name=".\Generated_Source\PSoC3\CyLib.h" />
+<dep name=".\Generated_Source\PSoC3\CySpc.h" />
+<dep name=".\Generated_Source\PSoC3\LCD.h" />
+<dep name=".\Generated_Source\PSoC3\LCD_LCDPort.h" />
+<dep name=".\Generated_Source\PSoC3\LCD_LCDPort_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\PSoC3_8051.h" />
+<dep name=".\Generated_Source\PSoC3\cyPm.h" />
+<dep name=".\Generated_Source\PSoC3\cydevice.h" />
+<dep name=".\Generated_Source\PSoC3\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC3\cydisabledsheets.h" />
+<dep name=".\Generated_Source\PSoC3\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC3\cyfitter_cfg.h" />
+<dep name=".\Generated_Source\PSoC3\cypins.h" />
+<dep name=".\Generated_Source\PSoC3\cytypes.h" />
+<dep name=".\Generated_Source\PSoC3\dbnc_CLK.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\project.h" />
+<dep name=".\Generated_Source\PSoC3\readyTimer_ISR.h" />
+<dep name=".\Generated_Source\PSoC3\startTimer_ISR.h" />
+<dep name=".\Generated_Source\PSoC3\stopTimer_ISR.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\startTimer_ISR.c" />
+</file>
 <file name=".\Generated_Source\PSoC3\startTimer_ISR.c" />
 <file name=".\DP8051\DP8051_Keil_951\Debug\stopTimer_ISR.obj">
 <dep name=".\Generated_Source\PSoC3\CyDmac.h" />
@@ -82,44 +142,17 @@
 <dep name=".\Generated_Source\PSoC3\cypins.h" />
 <dep name=".\Generated_Source\PSoC3\cytypes.h" />
 <dep name=".\Generated_Source\PSoC3\dbnc_CLK.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN_aliases.h" />
 <dep name=".\Generated_Source\PSoC3\project.h" />
+<dep name=".\Generated_Source\PSoC3\readyTimer_ISR.h" />
 <dep name=".\Generated_Source\PSoC3\startTimer_ISR.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_PIN.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_PIN_aliases.h" />
 <dep name=".\Generated_Source\PSoC3\stopTimer_ISR.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_PIN.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN_aliases.h" />
 <dep name=".\Generated_Source\PSoC3\stopTimer_ISR.c" />
 </file>
 <file name=".\Generated_Source\PSoC3\stopTimer_ISR.c" />
-<file name=".\DP8051\DP8051_Keil_951\Debug\main.obj">
-<dep name=".\Generated_Source\PSoC3\CyDmac.h" />
-<dep name=".\Generated_Source\PSoC3\CyFlash.h" />
-<dep name=".\Generated_Source\PSoC3\CyLib.h" />
-<dep name=".\Generated_Source\PSoC3\CySpc.h" />
-<dep name=".\Generated_Source\PSoC3\LCD.h" />
-<dep name=".\Generated_Source\PSoC3\LCD_LCDPort.h" />
-<dep name=".\Generated_Source\PSoC3\LCD_LCDPort_aliases.h" />
-<dep name=".\Generated_Source\PSoC3\PSoC3_8051.h" />
-<dep name=".\Generated_Source\PSoC3\cyPm.h" />
-<dep name=".\Generated_Source\PSoC3\cydevice.h" />
-<dep name=".\Generated_Source\PSoC3\cydevice_trm.h" />
-<dep name=".\Generated_Source\PSoC3\cydisabledsheets.h" />
-<dep name=".\Generated_Source\PSoC3\cyfitter.h" />
-<dep name=".\Generated_Source\PSoC3\cyfitter_cfg.h" />
-<dep name=".\Generated_Source\PSoC3\cypins.h" />
-<dep name=".\Generated_Source\PSoC3\cytypes.h" />
-<dep name=".\Generated_Source\PSoC3\dbnc_CLK.h" />
-<dep name=".\Generated_Source\PSoC3\project.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_ISR.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_PIN.h" />
-<dep name=".\Generated_Source\PSoC3\startTimer_PIN_aliases.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_ISR.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_PIN.h" />
-<dep name=".\Generated_Source\PSoC3\stopTimer_PIN_aliases.h" />
-<dep name=".\main.c" />
-</file>
-<file name=".\main.c" />
 <file name=".\DP8051\DP8051_Keil_951\Debug\CyDmac.obj">
 <dep name=".\Generated_Source\PSoC3\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC3\CyFlash.h" />
@@ -251,6 +284,56 @@
 <dep name=".\Generated_Source\PSoC3\dbnc_CLK.c" />
 </file>
 <file name=".\Generated_Source\PSoC3\dbnc_CLK.c" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\downPosition_PIN.obj">
+<dep name=".\Generated_Source\PSoC3\cydevice.h" />
+<dep name=".\Generated_Source\PSoC3\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC3\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC3\cypins.h" />
+<dep name=".\Generated_Source\PSoC3\cytypes.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\downPosition_PIN.c" />
+</file>
+<file name=".\Generated_Source\PSoC3\downPosition_PIN.c" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\upPosition_PIN.obj">
+<dep name=".\Generated_Source\PSoC3\cydevice.h" />
+<dep name=".\Generated_Source\PSoC3\cydevice_trm.h" />
+<dep name=".\Generated_Source\PSoC3\cyfitter.h" />
+<dep name=".\Generated_Source\PSoC3\cypins.h" />
+<dep name=".\Generated_Source\PSoC3\cytypes.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN_aliases.h" />
+<dep name=".\Generated_Source\PSoC3\upPosition_PIN.c" />
+</file>
+<file name=".\Generated_Source\PSoC3\upPosition_PIN.c" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\CyBootAsmKeil.obj">
+<dep name=".\Generated_Source\PSoC3\PSoC3_8051.inc" />
+<dep name=".\Generated_Source\PSoC3\cydevicekeil.inc" />
+<dep name=".\Generated_Source\PSoC3\cydevicekeil_trm.inc" />
+<dep name=".\Generated_Source\PSoC3\cyfitterkeil.inc" />
+<dep name=".\Generated_Source\PSoC3\CyBootAsmKeil.a51" />
+</file>
+<file name=".\Generated_Source\PSoC3\PSoC3_8051.inc" />
+<file name=".\Generated_Source\PSoC3\cydevicekeil.inc" />
+<file name=".\Generated_Source\PSoC3\cydevicekeil_trm.inc" />
+<file name=".\Generated_Source\PSoC3\cyfitterkeil.inc" />
+<file name=".\Generated_Source\PSoC3\CyBootAsmKeil.a51" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\KeilStart.obj">
+<dep name=".\Generated_Source\PSoC3\PSoC3_8051.inc" />
+<dep name=".\Generated_Source\PSoC3\cydevicekeil.inc" />
+<dep name=".\Generated_Source\PSoC3\cydevicekeil_trm.inc" />
+<dep name=".\Generated_Source\PSoC3\cyfitterkeil.inc" />
+<dep name=".\Generated_Source\PSoC3\KeilStart.a51" />
+</file>
+<file name=".\Generated_Source\PSoC3\KeilStart.a51" />
+<file name=".\DP8051\DP8051_Keil_951\Debug\cymem.obj">
+<dep name=".\Generated_Source\PSoC3\cymem.a51" />
+</file>
+<file name=".\Generated_Source\PSoC3\cymem.a51" />
+<file name=".\Generated_Source\PSoC3\startTimer_PIN.h" />
+<file name=".\Generated_Source\PSoC3\startTimer_PIN_aliases.h" />
+<file name=".\Generated_Source\PSoC3\stopTimer_PIN.h" />
+<file name=".\Generated_Source\PSoC3\stopTimer_PIN_aliases.h" />
 <file name=".\DP8051\DP8051_Keil_951\Debug\startTimer_PIN.obj">
 <dep name=".\Generated_Source\PSoC3\cydevice.h" />
 <dep name=".\Generated_Source\PSoC3\cydevice_trm.h" />
@@ -273,26 +356,6 @@
 <dep name=".\Generated_Source\PSoC3\stopTimer_PIN.c" />
 </file>
 <file name=".\Generated_Source\PSoC3\stopTimer_PIN.c" />
-<file name=".\DP8051\DP8051_Keil_951\Debug\CyBootAsmKeil.obj">
-<dep name=".\Generated_Source\PSoC3\PSoC3_8051.inc" />
-<dep name=".\Generated_Source\PSoC3\cydevicekeil.inc" />
-<dep name=".\Generated_Source\PSoC3\cydevicekeil_trm.inc" />
-<dep name=".\Generated_Source\PSoC3\cyfitterkeil.inc" />
-<dep name=".\Generated_Source\PSoC3\CyBootAsmKeil.a51" />
-</file>
-<file name=".\Generated_Source\PSoC3\PSoC3_8051.inc" />
-<file name=".\Generated_Source\PSoC3\cydevicekeil.inc" />
-<file name=".\Generated_Source\PSoC3\cydevicekeil_trm.inc" />
-<file name=".\Generated_Source\PSoC3\cyfitterkeil.inc" />
-<file name=".\Generated_Source\PSoC3\CyBootAsmKeil.a51" />
-<file name=".\DP8051\DP8051_Keil_951\Debug\KeilStart.obj">
-<dep name=".\Generated_Source\PSoC3\PSoC3_8051.inc" />
-<dep name=".\Generated_Source\PSoC3\cydevicekeil.inc" />
-<dep name=".\Generated_Source\PSoC3\cydevicekeil_trm.inc" />
-<dep name=".\Generated_Source\PSoC3\cyfitterkeil.inc" />
-<dep name=".\Generated_Source\PSoC3\KeilStart.a51" />
-</file>
-<file name=".\Generated_Source\PSoC3\KeilStart.a51" />
 <file name=".\DP8051\DP8051_Keil_951\Debug\StartTimer_INT.obj">
 <dep name=".\Generated_Source\PSoC3\CyDmac.h" />
 <dep name=".\Generated_Source\PSoC3\CyFlash.h" />
@@ -375,10 +438,6 @@
 <dep name=".\Generated_Source\PSoC3\StopTimerPin.c" />
 </file>
 <file name=".\Generated_Source\PSoC3\StopTimerPin.c" />
-<file name=".\DP8051\DP8051_Keil_951\Debug\cymem.obj">
-<dep name=".\Generated_Source\PSoC3\cymem.a51" />
-</file>
-<file name=".\Generated_Source\PSoC3\cymem.a51" />
 </CyGuid_1173175f-1b9b-4ad4-a065-754a48a27021>
 </dependency_info>
 </CyGuid_f44455c5-3770-4452-b988-0a7a7ff46256>
@@ -404,9 +463,10 @@
 <dep name=".\DP8051\DP8051_Keil_951\Debug\KeilStart.obj" />
 <dep name=".\DP8051\DP8051_Keil_951\Debug\startTimer_ISR.obj" />
 <dep name=".\DP8051\DP8051_Keil_951\Debug\stopTimer_ISR.obj" />
-<dep name=".\DP8051\DP8051_Keil_951\Debug\stopTimer_PIN.obj" />
-<dep name=".\DP8051\DP8051_Keil_951\Debug\startTimer_PIN.obj" />
 <dep name=".\DP8051\DP8051_Keil_951\Debug\dbnc_CLK.obj" />
+<dep name=".\DP8051\DP8051_Keil_951\Debug\downPosition_PIN.obj" />
+<dep name=".\DP8051\DP8051_Keil_951\Debug\upPosition_PIN.obj" />
+<dep name=".\DP8051\DP8051_Keil_951\Debug\readyTimer_ISR.obj" />
 <dep name=".\DP8051\DP8051_Keil_951\Debug\IceTimer.lib" />
 <dep name="${CyRoot}\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\DP8051\DP8051_Keil_951\Debug\CyComponentLibrary.lib" />
 </file>
@@ -444,6 +504,9 @@
 <name_val_pair name=".\Generated_Source\PSoC3\stopTimer_PIN.c" v="NOIV LARGE MODDP2 OMF2 VB(1) NOIP &quot;INCDIR(., .\Generated_Source\PSoC3)&quot; FF(3) DB DF(DEBUG) WL(2) PR(${OutputDir}/${CompileFile}.lst) CD &quot;OT(2, Size)&quot;" />
 <name_val_pair name=".\Generated_Source\PSoC3\startTimer_PIN.c" v="NOIV LARGE MODDP2 OMF2 VB(1) NOIP &quot;INCDIR(., .\Generated_Source\PSoC3)&quot; FF(3) DB DF(DEBUG) WL(2) PR(${OutputDir}/${CompileFile}.lst) CD &quot;OT(2, Size)&quot;" />
 <name_val_pair name=".\Generated_Source\PSoC3\dbnc_CLK.c" v="NOIV LARGE MODDP2 OMF2 VB(1) NOIP &quot;INCDIR(., .\Generated_Source\PSoC3)&quot; FF(3) DB DF(DEBUG) WL(2) PR(${OutputDir}/${CompileFile}.lst) CD &quot;OT(2, Size)&quot;" />
+<name_val_pair name=".\Generated_Source\PSoC3\downPosition_PIN.c" v="NOIV LARGE MODDP2 OMF2 VB(1) NOIP &quot;INCDIR(., .\Generated_Source\PSoC3)&quot; FF(3) DB DF(DEBUG) WL(2) PR(${OutputDir}/${CompileFile}.lst) CD &quot;OT(2, Size)&quot;" />
+<name_val_pair name=".\Generated_Source\PSoC3\upPosition_PIN.c" v="NOIV LARGE MODDP2 OMF2 VB(1) NOIP &quot;INCDIR(., .\Generated_Source\PSoC3)&quot; FF(3) DB DF(DEBUG) WL(2) PR(${OutputDir}/${CompileFile}.lst) CD &quot;OT(2, Size)&quot;" />
+<name_val_pair name=".\Generated_Source\PSoC3\readyTimer_ISR.c" v="NOIV LARGE MODDP2 OMF2 VB(1) NOIP &quot;INCDIR(., .\Generated_Source\PSoC3)&quot; FF(3) DB DF(DEBUG) WL(2) PR(${OutputDir}/${CompileFile}.lst) CD &quot;OT(2, Size)&quot;" />
 </name>
 </genericCmdLineData>
 <codeGenCmdLineTag v="-.appdatapath &quot;C:\Users\SLawson\AppData\Local\Cypress Semiconductor\PSoC Creator\3.1&quot; -.fdsnotice -.fdswarpdepfile=warp_dependencies.txt -.fdselabdepfile=elab_dependencies.txt -.fdsbldfile=generated_files.txt -p C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\IceTimer.cyprj -d CY8C3866AXI-040 -s C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\Generated_Source\PSoC3 -- -yv2 -q10 -ygs -o2 -v3 -.fftcfgtype=BE" />
@@ -465,49 +528,49 @@
 <v>Off-Chip</v>
 </tree_states_tab_names>
 <tree_states>
-<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\System\Clock [v2.20]">
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="Cypress Component Catalog\Digital\Logic\Not [v1.0]">
 <ExpandedNodeIds>
 <v>Cypress Component Catalog</v>
 <v>Cypress Component Catalog\Digital</v>
 <v>Cypress Component Catalog\Digital\Functions</v>
+<v>Cypress Component Catalog\Digital\Logic</v>
 <v>Cypress Component Catalog\Digital\Utility</v>
 <v>Cypress Component Catalog\Ports and Pins</v>
-<v>Cypress Component Catalog\System</v>
 </ExpandedNodeIds>
 <VisibleNodeIds>
-<v>Cypress Component Catalog\Digital\Utility\Debouncer [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Digital Comparator [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Down Counter (7-bit) [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Edge Detector [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Frequency Divider [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Glitch Filter [v2.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Pulse Converter [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\Sync [v1.0]</v>
-<v>Cypress Component Catalog\Digital\Utility\UDB Clock Enable [v1.0]</v>
-<v>Cypress Component Catalog\Display</v>
-<v>Cypress Component Catalog\Filters</v>
-<v>Cypress Component Catalog\Ports and Pins</v>
-<v>Cypress Component Catalog\Ports and Pins\Analog Pin [v2.10]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Bidirectional Pin [v2.10]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Input Pin [v2.10]</v>
-<v>Cypress Component Catalog\Ports and Pins\Digital Output Pin [v2.10]</v>
-<v>Cypress Component Catalog\Power Supervision</v>
-<v>Cypress Component Catalog\System</v>
-<v>Cypress Component Catalog\System\Boost Converter [v5.0]</v>
-<v>Cypress Component Catalog\System\Bootloadable [v1.30]</v>
-<v>Cypress Component Catalog\System\Bootloader [v1.30]</v>
-<v>Cypress Component Catalog\System\Clock [v2.20]</v>
-<v>Cypress Component Catalog\System\Die Temperature [v2.0]</v>
-<v>Cypress Component Catalog\System\DMA [v1.70]</v>
-<v>Cypress Component Catalog\System\EEPROM [v2.10]</v>
-<v>Cypress Component Catalog\System\Emulated EEPROM [v1.10]</v>
-<v>Cypress Component Catalog\System\External Memory Interface</v>
-<v>Cypress Component Catalog\System\Global Signal Reference [v2.0]</v>
-<v>Cypress Component Catalog\System\ILO Trim [v2.0]</v>
-<v>Cypress Component Catalog\System\Interrupt [v1.70]</v>
-<v>Cypress Component Catalog\System\RTC [v2.0]</v>
-<v>Cypress Component Catalog\System\SleepTimer [v3.20]</v>
-<v>Cypress Component Catalog\Thermal Management</v>
+<v>Cypress Component Catalog\Digital</v>
+<v>Cypress Component Catalog\Digital\Functions</v>
+<v>Cypress Component Catalog\Digital\Functions\Counter [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\CRC [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\PrISM [v2.20]</v>
+<v>Cypress Component Catalog\Digital\Functions\PRS [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\PWM [v3.10]</v>
+<v>Cypress Component Catalog\Digital\Functions\Quadrature Decoder [v2.40]</v>
+<v>Cypress Component Catalog\Digital\Functions\Shift Register [v2.30]</v>
+<v>Cypress Component Catalog\Digital\Functions\Timer [v2.70]</v>
+<v>Cypress Component Catalog\Digital\Logic</v>
+<v>Cypress Component Catalog\Digital\Logic\And [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Bufoe [v1.10]</v>
+<v>Cypress Component Catalog\Digital\Logic\D Flip Flop [v1.30]</v>
+<v>Cypress Component Catalog\Digital\Logic\D Flip Flop w/ Enable [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\De-Multiplexer [v1.10]</v>
+<v>Cypress Component Catalog\Digital\Logic\Digital Constant [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Logic High '1' [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Logic Low '0' [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Lookup Table [v1.50]</v>
+<v>Cypress Component Catalog\Digital\Logic\Multiplexer [v1.10]</v>
+<v>Cypress Component Catalog\Digital\Logic\Nand [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Nor [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Not [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Or [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\SR Flip Flop [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Toggle Flip Flop [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Virtual Mux [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Xnor [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Logic\Xor [v1.0]</v>
+<v>Cypress Component Catalog\Digital\Registers</v>
+<v>Cypress Component Catalog\Digital\Utility</v>
+<v>Cypress Component Catalog\Digital\Utility\Basic Counter [v1.0]</v>
 </VisibleNodeIds>
 </CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
 <CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
@@ -530,7 +593,7 @@
 </dataGuid>
 <dataGuid v="769d31ea-68b1-4f0c-b90a-7c10a43ee563">
 <CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563 type_name="CyDesigner.Common.ProjMgmt.Model.CyLinkCustomData" version="1">
-<deps_time v="130715625662839171" />
+<deps_time v="130715641959714171" />
 </CyGuid_769d31ea-68b1-4f0c-b90a-7c10a43ee563>
 </dataGuid>
 </userData>
