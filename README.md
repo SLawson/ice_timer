@@ -29,6 +29,9 @@ same speed, when the fan is blowing on them.
 
 #### Test Setup
 
+Note: We are fully aware that the K'NEX structure you're about to see is far more complicated than
+it neets to be. This was not an intentional design decision. It was an intentional fun decision.
+
 ![ice timer top1](https://github.com/SLawson/ice_timer/blob/master/images/P3230003.JPG?raw=true)
 ![ice timer top2](https://github.com/SLawson/ice_timer/blob/master/images/P3230005.JPG?raw=true)
 ![ice timer front](https://github.com/SLawson/ice_timer/blob/master/images/P3230004.JPG?raw=true)
