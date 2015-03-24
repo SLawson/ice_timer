@@ -27,9 +27,17 @@ This process will be repeated with several ice cubes, both with and without a fa
 and the times will be averaged to find out if the ice cubes tended to melt faster, slower, or the
 same speed, when the fan is blowing on them.
 
+#### Test Setup
+
+![ice timer top1](https://github.com/SLawson/ice_timer/blob/master/images/P3230003.JPG?raw=true)
+![ice timer top2](https://github.com/SLawson/ice_timer/blob/master/images/P3230005.JPG?raw=true)
+![ice timer front](https://github.com/SLawson/ice_timer/blob/master/images/P3230004.JPG?raw=true)
+![test setup with fan right](https://github.com/SLawson/ice_timer/blob/master/images/P3230006.JPG?raw=true)
+![test setup with fan left](https://github.com/SLawson/ice_timer/blob/master/images/P3230007.JPG?raw=true)
+
 #### Results
 
-It was found that the ice cubes definitely melt faster with a fan blowing on them.
+It was found that the ice cubes melt faster with a fan blowing on them.
 
 Melting Times:
 
