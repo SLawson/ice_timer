@@ -47,7 +47,7 @@ Melting Times:
 |   2   | 0:16:8.60  | 0:31:27.20 |
 |   3   | 0:13:19.7  | 0:32:24.60 |
 
-We were originally planning on averaging results to account help account for variations in ice cube
+We were originally planning on averaging results to help account for variations in ice cube
 size and melting platform starting temperature, but since the time delta between having a fan and
 not having a fan is so large, we decided the averaging wasn't necessary to conclude that an ice cube
 will, without a doubt, melt faster with a fan on it.
