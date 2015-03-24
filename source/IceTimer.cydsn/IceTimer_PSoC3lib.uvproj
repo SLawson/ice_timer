@@ -529,16 +529,6 @@
               <FilePath>.\Generated_Source\PSoC3\stopTimer_ISR.h</FilePath>
             </File>
             <File>
-              <FileName>dbnc_CLK.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.c</FilePath>
-            </File>
-            <File>
-              <FileName>dbnc_CLK.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.h</FilePath>
-            </File>
-            <File>
               <FileName>downPosition_PIN.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Generated_Source\PSoC3\downPosition_PIN.c</FilePath>
@@ -577,6 +567,101 @@
               <FileName>readyTimer_ISR.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC3\readyTimer_ISR.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\Timer_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>dbnc_CLK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.c</FilePath>
+            </File>
+            <File>
+              <FileName>dbnc_CLK.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.h</FilePath>
+            </File>
+            <File>
+              <FileName>timer_CLK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\timer_CLK.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer_CLK.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\timer_CLK.h</FilePath>
+            </File>
+            <File>
+              <FileName>sec_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\sec_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>sec_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\sec_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>sec_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\sec_CNTR_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>min_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\min_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>min_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\min_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>min_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\min_CNTR_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>tenthSec_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\tenthSec_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>tenthSec_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\tenthSec_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>tenthSec_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\tenthSec_CNTR_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>hr_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\hr_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>hr_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\hr_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>hr_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\hr_CNTR_PM.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1109,16 +1194,6 @@
               <FilePath>.\Generated_Source\PSoC3\stopTimer_ISR.h</FilePath>
             </File>
             <File>
-              <FileName>dbnc_CLK.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.c</FilePath>
-            </File>
-            <File>
-              <FileName>dbnc_CLK.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.h</FilePath>
-            </File>
-            <File>
               <FileName>downPosition_PIN.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Generated_Source\PSoC3\downPosition_PIN.c</FilePath>
@@ -1157,6 +1232,101 @@
               <FileName>readyTimer_ISR.h</FileName>
               <FileType>5</FileType>
               <FilePath>.\Generated_Source\PSoC3\readyTimer_ISR.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\Timer.c</FilePath>
+            </File>
+            <File>
+              <FileName>Timer.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\Timer.h</FilePath>
+            </File>
+            <File>
+              <FileName>Timer_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\Timer_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>dbnc_CLK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.c</FilePath>
+            </File>
+            <File>
+              <FileName>dbnc_CLK.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\dbnc_CLK.h</FilePath>
+            </File>
+            <File>
+              <FileName>timer_CLK.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\timer_CLK.c</FilePath>
+            </File>
+            <File>
+              <FileName>timer_CLK.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\timer_CLK.h</FilePath>
+            </File>
+            <File>
+              <FileName>sec_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\sec_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>sec_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\sec_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>sec_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\sec_CNTR_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>min_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\min_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>min_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\min_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>min_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\min_CNTR_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>tenthSec_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\tenthSec_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>tenthSec_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\tenthSec_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>tenthSec_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\tenthSec_CNTR_PM.c</FilePath>
+            </File>
+            <File>
+              <FileName>hr_CNTR.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\hr_CNTR.c</FilePath>
+            </File>
+            <File>
+              <FileName>hr_CNTR.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Generated_Source\PSoC3\hr_CNTR.h</FilePath>
+            </File>
+            <File>
+              <FileName>hr_CNTR_PM.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Generated_Source\PSoC3\hr_CNTR_PM.c</FilePath>
             </File>
           </Files>
         </Group>

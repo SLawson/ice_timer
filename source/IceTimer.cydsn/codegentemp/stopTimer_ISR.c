@@ -26,7 +26,14 @@
 ********************************************************************************/
 /* `#START stopTimer_ISR_intc` */
 
-#include <project.h>    
+#include <project.h>   
+#include <stdio.h>
+    
+#define TIMER_INIT (2^32)
+#define CNT_PER_SEC 100
+#define CNT_PER_MIN (60 * CNT_PER_SEC)
+#define CNT_PER_HR  (60 * CNT_PER_SEC)
+
     
 /* `#END` */
 
@@ -133,9 +140,25 @@ CY_ISR(stopTimer_ISR_Interrupt)
     /*  Place your Interrupt code here. */
     /* `#START stopTimer_ISR_Interrupt` */
     
+    uint8 time_str[20];
+    
+    uint8 tenth_seconds;
+    uint8 seconds;
+    uint8 minutes;
+    uint8 hours;
+    
+    tenth_seconds = tenthSec_CNTR_ReadCounter();    
+    seconds = sec_CNTR_ReadCounter();
+    minutes = min_CNTR_ReadCounter();    
+    hours = hr_CNTR_ReadCounter();
+        
+    sprintf(time_str, "%d:%d:%d.%d", (int) hours, (int) minutes, (int) seconds, (int) tenth_seconds);
+    
     LCD_ClearDisplay();
     LCD_Position(0,0);
-    LCD_PrintString("Stop Timer");
+    LCD_PrintString("Done! Time:");
+    LCD_Position(1,0);   
+    LCD_PrintString(time_str);
 
     /* `#END` */
 

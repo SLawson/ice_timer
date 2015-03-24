@@ -1,4 +1,4 @@
-C51 COMPILER V9.51   MAIN                                                                  03/22/2015 23:03:12 PAGE 1   
+C51 COMPILER V9.51   MAIN                                                                  03/23/2015 22:37:37 PAGE 1   
 
 
 C51 COMPILER V9.51, COMPILATION OF MODULE MAIN
@@ -22,24 +22,33 @@ line level    source
   11          
   12          int main()
   13          {
-  14   1          LCD_Start();
-  15   1          LCD_Position(0,0);
-  16   1          LCD_PrintString("Ready to begin");
-  17   1          LCD_Position(1,0);
-  18   1          LCD_PrintString("timing...");
-  19   1      
-  20   1          startTimer_ISR_Start();
-  21   1          stopTimer_ISR_Start();
-  22   1          readyTimer_ISR_Start();
-  23   1          
-  24   1          CyGlobalIntEnable;
-  25   1      
-  26   1          for(;;)
-  27   1          {
-  28   2          }
-  29   1      }
-  30          
-C51 COMPILER V9.51   MAIN                                                                  03/22/2015 23:03:12 PAGE 2   
+  14   1          dbnc_CLK_Start();
+  15   1          timer_CLK_Start();
+  16   1          
+  17   1          LCD_Start();
+  18   1          LCD_Position(0,0);
+  19   1          LCD_PrintString("Set arm to upper");
+  20   1          LCD_Position(1,0);
+  21   1          LCD_PrintString("position...");
+  22   1          
+  23   1          Timer_Start();
+  24   1          tenthSec_CNTR_Start();
+  25   1          sec_CNTR_Start();
+  26   1          min_CNTR_Start();
+  27   1          hr_CNTR_Start();
+  28   1          
+  29   1          startTimer_ISR_Start();
+  30   1          stopTimer_ISR_Start();
+  31   1          readyTimer_ISR_Start();
+  32   1          
+  33   1          CyGlobalIntEnable;
+  34   1      
+  35   1          for(;;)
+  36   1          {
+  37   2          }
+  38   1      }
+  39          
+C51 COMPILER V9.51   MAIN                                                                  03/23/2015 22:37:37 PAGE 2   
 
 ASSEMBLY LISTING OF GENERATED OBJECT CODE
 
@@ -48,49 +57,65 @@ ASSEMBLY LISTING OF GENERATED OBJECT CODE
                                            ; SOURCE LINE # 12
                                            ; SOURCE LINE # 13
                                            ; SOURCE LINE # 14
-0000 120000      E     LCALL   LCD_Start
+0000 120000      E     LCALL   dbnc_CLK_Start
                                            ; SOURCE LINE # 15
-0003 7D00              MOV     R5,#00H
-0005 7F00              MOV     R7,#00H
-0007 120000      E     LCALL   _LCD_Position
-                                           ; SOURCE LINE # 16
-000A 7BFF              MOV     R3,#0FFH
-000C 7A00        R     MOV     R2,#HIGH ?SC_0
-000E 7900        R     MOV     R1,#LOW ?SC_0
-0010 120000      E     LCALL   _LCD_PrintString
+0003 120000      E     LCALL   timer_CLK_Start
                                            ; SOURCE LINE # 17
-0013 7D00              MOV     R5,#00H
-0015 7F01              MOV     R7,#01H
-0017 120000      E     LCALL   _LCD_Position
+0006 120000      E     LCALL   LCD_Start
                                            ; SOURCE LINE # 18
-001A 7BFF              MOV     R3,#0FFH
-001C 7A00        R     MOV     R2,#HIGH ?SC_15
-001E 7900        R     MOV     R1,#LOW ?SC_15
-0020 120000      E     LCALL   _LCD_PrintString
+0009 7D00              MOV     R5,#00H
+000B 7F00              MOV     R7,#00H
+000D 120000      E     LCALL   _LCD_Position
+                                           ; SOURCE LINE # 19
+0010 7BFF              MOV     R3,#0FFH
+0012 7A00        R     MOV     R2,#HIGH ?SC_0
+0014 7900        R     MOV     R1,#LOW ?SC_0
+0016 120000      E     LCALL   _LCD_PrintString
                                            ; SOURCE LINE # 20
-0023 120000      E     LCALL   startTimer_ISR_Start
+0019 7D00              MOV     R5,#00H
+001B 7F01              MOV     R7,#01H
+001D 120000      E     LCALL   _LCD_Position
                                            ; SOURCE LINE # 21
-0026 120000      E     LCALL   stopTimer_ISR_Start
-                                           ; SOURCE LINE # 22
-0029 120000      E     LCALL   readyTimer_ISR_Start
+0020 7BFF              MOV     R3,#0FFH
+0022 7A00        R     MOV     R2,#HIGH ?SC_17
+0024 7900        R     MOV     R1,#LOW ?SC_17
+0026 120000      E     LCALL   _LCD_PrintString
+                                           ; SOURCE LINE # 23
+0029 120000      E     LCALL   Timer_Start
                                            ; SOURCE LINE # 24
-002C D2AF              SETB    EA
-002E 9044F4            MOV     DPTR,#044F4H
-0031 74FD              MOV     A,#0FDH
-0033 F0                MOVX    @DPTR,A
+002C 120000      E     LCALL   tenthSec_CNTR_Start
+                                           ; SOURCE LINE # 25
+002F 120000      E     LCALL   sec_CNTR_Start
                                            ; SOURCE LINE # 26
-0034         ?C0001:
+0032 120000      E     LCALL   min_CNTR_Start
                                            ; SOURCE LINE # 27
-                                           ; SOURCE LINE # 28
-0034 80FE              SJMP    ?C0001
-0036 22                RET     
+0035 120000      E     LCALL   hr_CNTR_Start
+                                           ; SOURCE LINE # 29
+0038 120000      E     LCALL   startTimer_ISR_Start
+                                           ; SOURCE LINE # 30
+003B 120000      E     LCALL   stopTimer_ISR_Start
+                                           ; SOURCE LINE # 31
+003E 120000      E     LCALL   readyTimer_ISR_Start
+                                           ; SOURCE LINE # 33
+0041 D2AF              SETB    EA
+0043 9044F4            MOV     DPTR,#044F4H
+0046 74FD              MOV     A,#0FDH
+0048 F0                MOVX    @DPTR,A
+                                           ; SOURCE LINE # 35
+0049         ?C0001:
+                                           ; SOURCE LINE # 36
+                                           ; SOURCE LINE # 37
+0049 80FE              SJMP    ?C0001
+004B 22                RET     
              ; FUNCTION main (END)
 
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =     55    ----
-   CONSTANT SIZE    =     25    ----
+C51 COMPILER V9.51   MAIN                                                                  03/23/2015 22:37:37 PAGE 3   
+
+   CODE SIZE        =     76    ----
+   CONSTANT SIZE    =     29    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =   ----    ----

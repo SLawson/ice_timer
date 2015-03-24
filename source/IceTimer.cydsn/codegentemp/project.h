@@ -27,7 +27,13 @@
 #include <upPosition_PIN.h>
 #include <upPosition_PIN_aliases.h>
 #include <dbnc_CLK.h>
+#include <sec_CNTR.h>
 #include <readyTimer_ISR.h>
+#include <min_CNTR.h>
+#include <Timer.h>
+#include <tenthSec_CNTR.h>
+#include <timer_CLK.h>
+#include <hr_CNTR.h>
 #include <LCD_LCDPort.h>
 #include <LCD_LCDPort_aliases.h>
 #include <CyDmac.h>

@@ -1,6 +1,5 @@
-C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\IceTimer.cyprj|e94d2c8a-c473-48a8-8c12-8ed6b9a40ab7
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|1aa8d5a2-6322-4ae5-9a0a-aa2769b65863
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|1884cc66-056d-45e4-a932-cf9429040fa4
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|b1bb6865-52cb-424e-9d6e-6995b59b1a03
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|5229f2f5-8e15-43ce-92b8-3e3acd0d4022
-C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|97d764b3-e534-4300-a873-da205c35d07b
+C:\Users\SLawson\Documents\personal_projects\ice_timer\IceTimer\IceTimer.cydsn\IceTimer.cyprj|faa5b0f7-2cbd-441e-beea-8d9ec0bfb98b
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|620a9e8d-030d-4c65-8f64-25979da4fc37
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|77ee9c1d-27c8-4f95-b4e4-608f82f64dd0
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|683117d5-f09b-45ad-909d-43643b145eb5
+C:\Program Files (x86)\Cypress\PSoC Creator\3.1\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|f47c5284-f0a7-41cd-8be4-3974e7a8856b

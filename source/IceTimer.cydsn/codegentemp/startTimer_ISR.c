@@ -135,7 +135,7 @@ CY_ISR(startTimer_ISR_Interrupt)
 
     LCD_ClearDisplay();
     LCD_Position(0,0);
-    LCD_PrintString("Start Timer");
+    LCD_PrintString("Timing...");
     
     /* `#END` */
 

@@ -132,10 +132,10 @@ CY_ISR(readyTimer_ISR_Interrupt)
 {
     /*  Place your Interrupt code here. */
     /* `#START readyTimer_ISR_Interrupt` */
-
+ 
     LCD_ClearDisplay();
     LCD_Position(0,0);
-    LCD_PrintString("Ready to begin");
+    LCD_PrintString("Ready to start");
     LCD_Position(1,0);
     LCD_PrintString("timing...");
     
